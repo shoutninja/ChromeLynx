@@ -1,0 +1,17 @@
+body {
+    width: 200px;
+    text-align: center;
+}
+.clickable {
+    cursor: pointer;
+}
+.toggleHints {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Overrides */
+.well {
+    margin-bottom: 0;
+}
