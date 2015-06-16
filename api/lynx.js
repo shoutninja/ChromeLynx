@@ -40,7 +40,12 @@ app.service("ninja.shout.lynx.abstract", ["ninja.shout.lynx.api.forum", function
     this.submit = function(url, success, failure, notify) {
         for (var i = 0; i < forum.length; i++) {
             if (forum[i].url == url) {
-                if (success) success("Duplicate");
+                if(!forum[i].submissions) {
+                    forum[i].submissions=1;
+                }
+                forum[i].submissions++;
+                forum.$save(i);
+                if (failure) failure("Duplicate. Dankness: "+(0||forum[i].submissions));
                 if (notify) notify();
                 this.validate();
                 return false;

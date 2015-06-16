@@ -15,9 +15,9 @@ app.run(["ninja.shout.lynx.abstract", "ninja.shout.lynx.commands.go", "ninja.sho
                     notifications.attemptNotification("Success", {
                         body: "Your page was successfully submitted."
                     });
-                },function() {
+                },function(reason) {
                     notifications.attemptNotification("Error",{
-                        body: "Your page submission was unsuccessful."
+                        body: reason||"Your page submission was unsuccessful."
                     });
                 });
             });
