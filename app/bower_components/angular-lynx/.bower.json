@@ -1,0 +1,40 @@
+{
+  "name": "angular-lynx",
+  "authors": [
+    "jakebillings <jake@eakjb.com>"
+  ],
+  "description": "A set of angular tools for working with the Lynx repository.",
+  "keywords": [
+    "eakjb",
+    "shoutninja"
+  ],
+  "license": "MIT",
+  "homepage": "http://shout.ninja",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "chai": "~3.0.0",
+    "mocha": "~2.2.5",
+    "angular-mocks": "~1.4.2",
+    "chai-as-promised": "~5.1.0"
+  },
+  "dependencies": {
+    "angular": "~1.4.2",
+    "firebase": "~2.2.7",
+    "angularfire": "~1.1.2"
+  },
+  "_release": "aa3ee05c39",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "aa3ee05c3965276e09938108c5a1444e22a30966"
+  },
+  "_source": "git://github.com/shoutninja/angular-lynx.git",
+  "_target": "*",
+  "_originalSource": "angular-lynx"
+}
